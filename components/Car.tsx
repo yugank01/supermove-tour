@@ -45,7 +45,8 @@ const Car = () => {
       <img
         src="/tata-nexon-side.png" // Add your car image here
         alt="Moving Car"
-        style={{ width: "250px", height: "auto" }}
+        // style={{ width: "250px", height: "auto" }}
+        className="w-[25%] md:w-[35%]"
       />
     </motion.div>
   );

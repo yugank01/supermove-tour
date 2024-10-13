@@ -1,5 +1,5 @@
 import Car from "@/components/Car";
-import CustomScrollbar from "@/components/CustomScrollbar";
+// import CustomScrollbar from "@/components/CustomScrollbar";
 import { Features } from "@/components/Features";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -17,10 +17,12 @@ export default function Home() {
           <SuperMoveTour />
         </div>
         <Timeline />
-        <Car />
+        <div className="hidden md:flex">
+          <Car />
+        </div>
         <Footer />
       </div>
-      <CustomScrollbar />
+      {/* <CustomScrollbar /> */}
     </main>
   );
 }

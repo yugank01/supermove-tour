@@ -59,7 +59,7 @@ export const SuperMoveTour = () => {
             y: "-50%",
             x: "-50%",
           }}
-          className="absolute font-extrabold left-[82%] md:left-1/2 top-1/2 text-2xl sm:text-3xl md:text-[8.8rem] text-center leading-tight text-white"
+          className="absolute font-extrabold left-[82%] md:left-1/2 top-1/2 text-[3rem] sm:text-3xl md:text-[8.8rem] text-center leading-tight text-white"
         >
           Spheron
           <br />
