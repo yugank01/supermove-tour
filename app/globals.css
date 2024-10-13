@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html,
+body {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  padding: 0;
+  margin: 0;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --color-primary: #69da55;
+    /* --color-secondary: #7b61ff; */
+    --color-secondary: #2dc0ff;
+    --color-heading: #f5f5f7;
+    --color-text: rgba(255, 255, 255, 0.6);
+    --color-background: #090909;
+
+    font-size: 62.5%;
+  }
+}
+
+@layer utilities {
+  /* This two helpers apply a -50% to the translate x/y, and add
+   * a --y/--x css variable to it. This util is only here to make writing this class
+   * a bit easier to read in the HTML :)   */
+  .translate-y-centered-offset {
+    @apply translate-y-[calc(-50%_+_var(--y))];
+  }
+  .translate-x-centered-offset {
+    @apply translate-x-[calc(-50%_+_var(--x))];
+  }
+}
+
+h1,
+h2 {
+  color: #2dc0ff;
+}
+
+.hoverUnderline {
+  display: inline-block;
+  position: relative;
+}
+
+.hoverUnderline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -0.5rem;
+  left: 0;
+  background-color: #00b24f;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hoverUnderline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hoverUnderlineWhite {
+  display: inline-block;
+  position: relative;
+}
+
+.hoverUnderlineWhite::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -0.5rem;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hoverUnderlineWhite:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.left-timeline {
+  justify-content: flex-end;
+  padding-right: 6rem; /* Adjust space for marker */
+}
+
+.right-timeline {
+  justify-content: flex-start;
+  padding-left: 6rem; /* Adjust space for marker */
+}
+
+/* Additional styles for markers */
+.left-timeline .marker,
+.right-timeline .marker {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-timeline .marker {
+  left: calc(50% - 0.75rem); /* Align marker on the left */
+}
+
+.right-timeline .marker {
+  left: calc(50% + 0.75rem); /* Align marker on the right */
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+}
+
+/* Marker dots */
+.timeline-marker {
+  width: 15px;
+  height: 15px;
+  background-color: #2dc0ff;
+  border: 3px solid #f5f5f7;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Additional CSS for animated gradient background */
+.center-line {
+  background: linear-gradient(180deg, #2dc0ff, #2e86de, #4a69bd);
+  animation: gradientScroll 5s infinite linear;
+}
+
+@keyframes gradientScroll {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
