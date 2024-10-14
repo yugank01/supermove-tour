@@ -34,13 +34,13 @@ export const SuperMoveTour = () => {
         "--opacity-border": opacityBorder,
       })}
       ref={targetRef}
-      className="mt-[50vh] flex h-[500vh] items-start justify-start bg-[#090909]"
+      className="mt-[50vh] flex h-[500vh] items-start justify-start"
     >
-      <div className="sticky top-1/2 left-1/2 min-h-[50rem] min-w-[50rem] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap before:absolute before:inset-0 before:scale-[var(--scale)] before:border-[2.5rem] before:border-[#69da55] before:opacity-[var(--opacity-border)]">
+      <div className="sticky top-1/2 left-1/2 min-h-[50rem] min-w-[50rem] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap before:absolute before:inset-0 before:scale-[var(--scale)] before:border-[2.5rem] before:border-cyan-500 before:opacity-[var(--opacity-border)]">
         <motion.p
           aria-hidden
           style={{ x: textX, y: "-50%" }}
-          className="whitepspace-nowrap font-bold min-w-screen absolute top-1/2 left-[calc(-50vw+25rem)] text-[23rem] text-heading"
+          className="whitepspace-nowrap font-bold min-w-screen absolute top-1/2 left-[calc(-50vw+25rem)] text-[23rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
         >
           Spheron SuperMove Tour.
         </motion.p>
@@ -59,16 +59,15 @@ export const SuperMoveTour = () => {
             y: "-50%",
             x: "-50%",
           }}
-          className="absolute font-extrabold left-[82%] md:left-1/2 top-1/2 text-[3rem] sm:text-3xl md:text-[8.8rem] text-center leading-tight text-white"
+          className="absolute text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 left-[82%] md:left-1/2 top-1/2 text-[3rem] sm:text-3xl md:text-[8.8rem] text-center leading-tight"
         >
           Spheron
           <br />
           SuperMove Tour
         </motion.p>
-        <span className="absolute left-[calc(50%*var(--scale)+50%)] top-0 z-10 h-full w-[50vw] origin-left scale-[var(--scale)] bg-background opacity-[var(--opacity-border)]" />
-        <span className="absolute left-[calc(50%*var(--scale)+50%-(2.5rem*var(--scale)))] top-0 z-[12] h-full w-[50vw] origin-left scale-[var(--scale)] border-l-[2.5rem] border-[#69da55] opacity-[var(--opacity-border)]" />
+        <span className="absolute left-[calc(50%*var(--scale)+50%)] top-0 z-10 h-full w-[50vw] origin-left scale-[var(--scale)] bg-[#030014] opacity-[var(--opacity-border)]" />
+        <span className="absolute left-[calc(50%*var(--scale)+50%-(2.5rem*var(--scale)))] top-0 z-[12] h-full w-[50vw] origin-left scale-[var(--scale)] border-l-[2.5rem] border-cyan-500 opacity-[var(--opacity-border)]" />
       </div>
-      
     </motion.section>
   );
 };

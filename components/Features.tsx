@@ -59,18 +59,21 @@ export const Features = () => {
       <div className="sticky top-[16.7vh] h-[66.8vh] px-16 text-xl sm:text-[3rem] md:text-2xl leading-[1] text-white w-[80rem] md:[&_p]:w-[45rem] [&_p]:max-w-[90%]">
         <motion.div style={{ x, scale }} className="relative h-full">
           <motion.figure style={{ opacity }} className="h-full">
-            <img src="/event-map.webp" className="h-full w-auto rounded-3xl" />
+            <img
+              src="/event-map.webp"
+              className="h-full w-auto rounded-3xl opacity-40"
+            />
           </motion.figure>
           <motion.figure style={{ opacity: text2Opacity }}>
             <img
               src="/event-map.webp"
-              className="absolute inset-0 h-full w-auto rounded-3xl"
+              className="absolute inset-0 h-full w-auto rounded-3xl opacity-40"
             />
           </motion.figure>
           <motion.figure style={{ opacity: text3Opacity }}>
             <img
               src="/event-map.webp"
-              className="absolute inset-0 h-full w-auto rounded-3xl"
+              className="absolute inset-0 h-full w-auto rounded-3xl opacity-40"
             />
           </motion.figure>
         </motion.div>
@@ -81,9 +84,11 @@ export const Features = () => {
           })}
           className="translate-y-centered-offset absolute top-1/2 left-[27rem] sm:left-[15rem] md:left-0 w-[25rem] sm:w-[30rem] md:w-auto"
         >
-          <span className="text-primary font-bold">What?</span>
+          <span className="text-[5.5rem] text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            What?
+          </span>
           <br />
-          <span className="text-xl text-">
+          <span className="text-xl text-cyan-500 font-semibold">
             Spheron SuperMove Tour is a 6 month long developer adoption campaign
             being lead by Spheron and Aptos. Spheron SuperMove Tour aims at
             uniting the open - source developer community here in India for
@@ -99,9 +104,11 @@ export const Features = () => {
           })}
           className="translate-y-centered-offset absolute top-1/2 left-[27rem] sm:left-[15rem] md:left-0 w-[25rem] sm:w-[30rem] md:w-auto"
         >
-          <span className="text-primary font-bold">Why?</span>
+          <span className="text-[5.5rem] text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            Why?
+          </span>
           <br />
-          <span className="text-xl">
+          <span className="text-xl text-cyan-500 font-semibold">
             The Indian web3 developer ecosystem faces several challenges: a
             fragmented and inadequate education system, stagnant growth in
             communication and social channels, and limited reach and awareness
@@ -117,9 +124,11 @@ export const Features = () => {
           })}
           className="translate-y-centered-offset absolute top-1/2 left-[27rem] sm:left-[15rem] md:left-0 w-[25rem] sm:w-[30rem] md:w-auto"
         >
-          <span className="text-primary font-bold">Who?</span>
+          <span className="text-[5.5rem] text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            Who?
+          </span>
           <br />
-          <span className="text-xl">
+          <span className="text-xl text-cyan-500 font-semibold">
             The Spheron SuperMove Tour is tailor-made for developers, aspiring
             blockchain builders, and open-source enthusiasts who are eager to
             dive into the world of blockchain and emerging decentralised
