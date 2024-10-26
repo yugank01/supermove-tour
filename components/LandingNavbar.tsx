@@ -5,10 +5,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-[75px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-5 md:px-10">
       <div className="w-full h-full flex items-center justify-between m-auto md:px-[10px]">
-        <a
-          href="/"
-          className="h-auto flex items-center w-[20%]"
-        >
+        <a href="/" className="h-auto flex items-center w-[20%]">
           <Image
             src="/spheron.svg"
             alt="logo"
@@ -22,7 +19,7 @@ const Navbar = () => {
           </span>
         </a>
 
-        <div className="w-[80%] h-full flex items-center justify-between md:mr-20">
+        {/* <div className="w-[80%] h-full flex items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] md:mr-[15px] px-[8px] md:px-[20px] py-[5px] md:py-[10px] rounded-full text-gray-200">
             <a href="#about-me" className="cursor-pointer text-lg">
               About me
@@ -34,9 +31,15 @@ const Navbar = () => {
               Projects
             </a>
           </div>
-        </div>
+        </div> */}
 
-        {/* <div className="flex flex-row gap-5"></div> */}
+        <Image
+          src="/spheronxaptos.webp"
+          width={400}
+          height={400}
+          alt="banner-logo"
+          className="w-[50%] md:w-[30%]"
+        />
       </div>
     </div>
   );

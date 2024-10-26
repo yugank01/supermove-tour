@@ -9,28 +9,40 @@ export interface TimelineEvent {
 
 export const timelineData: TimelineEvent[] = [
   {
-    title: "Event One",
+    title: "City Wide Workshops",
     description: "This is the first event on the timeline.",
-    date: "Jan 2024",
-    imageUrl: "/img/event1.jpg", // Example image path
+    date: "July 2024 - November 2024",
+    imageUrl: "/colleges.jpeg", // Example image path
   },
   {
-    title: "Event Two",
-    description: "This is the second event on the timeline.",
-    date: "Feb 2024",
-    imageUrl: "/img/event2.jpg",
+    title: "College/University Workshops",
+    description: "This is the first event on the timeline.",
+    date: "July(Mid) 2024 - November(Mid) 2024",
+    imageUrl: "/colleges.jpeg",
   },
   {
-    title: "Event Three",
+    title: "Online Workshops",
     description: "This is the third event on the timeline.",
-    date: "March 2024",
-    imageUrl: "/img/event3.jpg",
+    date: "August 2024 - November 2024",
+    imageUrl: "/online.png",
   },
   {
-    title: "Event Four",
+    title: "Day - dAppathon",
     description: "This is the fourth event on the timeline.",
-    date: "April 2024",
-    imageUrl: "/img/event4.jpg",
+    date: "August(Mid) 2024 - December 2024",
+    imageUrl: "/colleges.jpeg",
+  },
+  {
+    title: "SuperMove Builder's Meet",
+    description: "This is the fourth event on the timeline.",
+    date: "August(Mid) 2024 - December(Mid) 2024",
+    imageUrl: "/colleges.jpeg",
+  },
+  {
+    title: "dAppathon",
+    description: "This is the fourth event on the timeline.",
+    date: "August(Mid) 2024 - November(Mid) 2024",
+    imageUrl: "/colleges.jpeg",
   },
   // Add more events as needed...
 ];

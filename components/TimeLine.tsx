@@ -74,15 +74,15 @@ const Timeline: React.FC = () => {
                   <img
                     src={event.imageUrl}
                     alt={event.title}
-                    className="w-full h-36 object-cover rounded-md mb-4"
+                    className="w-full h-52 rounded-md mb-4"
                   />
-                  <h3 className="text-lg font-semibold text-white">
+                  <h3 className="text-[2.75rem] font-semibold text-white">
                     {event.title}
                   </h3>
-                  <p className="mt-2 text-sm text-gray-200">
+                  {/* <p className="mt-2 text-sm text-gray-200">
                     {event.description}
-                  </p>
-                  <span className="block mt-3 text-xs text-gray-400">
+                  </p> */}
+                  <span className="block mt-3 text-[1.25rem]">
                     {event.date}
                   </span>
                 </div>
