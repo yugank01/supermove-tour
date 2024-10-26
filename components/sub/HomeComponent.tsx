@@ -115,7 +115,7 @@ const HeroComponent = () => {
         className="w-full h-full justify-center items-center hidden md:flex"
       >
         <Image
-          src="/background.png"
+          src="/hero.jpeg"
           alt="image for hero"
           height={350}
           width={350}
