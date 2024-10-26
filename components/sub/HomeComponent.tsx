@@ -117,9 +117,9 @@ const HeroComponent = () => {
         <Image
           src="/hero.jpeg"
           alt="image for hero"
-          height={350}
-          width={350}
-          className="opacity-50 rounded-3xl"
+          height={450}
+          width={450}
+          className="rounded-3xl"
         />
       </motion.div>
     </motion.div>
